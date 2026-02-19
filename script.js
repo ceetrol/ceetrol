@@ -106,7 +106,7 @@ const siteData = [
         id: 'p11', title: 'TELEPHONE', thumb: 'assets/thumbs/1.webp', inDock: false,
         x: 250, y: 130, 
         description: '3D cover art and animation for Poobon & Koorosh’s single Telephone, blending dark chrome aesthetics with subtle vibrant accents to create bold, high-impact visuals.',
-        gallery: [{ type: 'image', src: 'assets/poobon/tl/webp.png' },
+        gallery: [{ type: 'image', src: 'assets/poobon/tl/1.webp' },
             { type: 'video', src: 'assets/poobon/tl/2.mp4' }]
     },
     { 
@@ -207,7 +207,7 @@ const siteData = [
         id: 'p1', title: 'HESADAT', thumb: 'assets/thumbs/11.webp', inDock: false,
         x: 1070, y: 110,
         description: '3D cover artwork and animation for Poobon’s track Hesadat, featuring colorful, nature-inspired and floral visuals that reflect the mood of the song.',
-        gallery: [{ type: 'image', src: 'assets/poobon/hesadat/1.png' },
+        gallery: [{ type: 'image', src: 'assets/poobon/hesadat/1.webp' },
             { type: 'image', src: 'assets/poobon/hesadat/2.png' },
             { type: 'video', src: 'assets/poobon/hesadat/3.mp4' }]
     },
