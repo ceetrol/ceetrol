@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEETROL</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="bg-container">
+        <video autoplay muted loop playsinline id="bg-video"></video>
+    </div>
+
+    <script>
+        const bgVideo = document.getElementById('bg-video');
+        if (window.innerWidth < 768) {
+            // MOBILE VIDEO (Change this to your vertical video file)
+            bgVideo.innerHTML = '<source src="assets/flvm1.mp4" type="video/mp4">';
+        } else {
+            // DESKTOP VIDEO (Your current one)
+            bgVideo.innerHTML = '<source src="assets/flv2.mp4" type="video/mp4">';
+        }
+        
+        // Force the video to load and play after injecting the source
+        bgVideo.load();
+    </script>
+
+    <div id="quick-look" onclick="this.style.display='none'"><img src="" id="ql-img"></div>
+
+    <div id="error-popup" class="error-hidden">
+        <div class="error-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/179/179386.png" width="50">
+            <h3 id="error-title">System Error</h3>
+            <p id="error-msg">Application not responding.</p>
+            <button onclick="closeError()">OK</button>
+        </div>
+    </div>
+    <div id="mobile-warning" class="warning-hidden">
+        <div class="mac-alert">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Finder_Icon_macOS_Big_Sur.png" class="mac-alert-icon">
+            
+            <div class="mac-alert-content">
+                <h3 class="mac-alert-title">Desktop Recommended</h3>
+                <p class="mac-alert-text">
+                
+                    For the best experience, please open this link on a laptop or desktop computer :D
+                </p>
+                <div class="mac-alert-buttons">
+                    <button class="mac-btn-primary" onclick="closeWarning()">Continue on Mobile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="desktop"></div>
+    <div id="window-area"></div>
+    
+    <div class="dock-container">
+        <div class="dock" id="dock"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
