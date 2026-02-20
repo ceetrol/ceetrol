@@ -582,3 +582,27 @@ body {
     backdrop-filter: blur(20px); 
     -webkit-backdrop-filter: blur(20px);
 }
+/* --- FIX FULLSCREEN VIDEO ZOOM/CROPPING --- */
+video:fullscreen {
+    object-fit: contain !important;
+    background-color: #000 !important; /* Ensures bars are black */
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+/* Vendor prefixes for Safari, Chrome, and older browsers */
+video:-webkit-full-screen {
+    object-fit: contain !important;
+    background-color: #000 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+video:-moz-full-screen {
+    object-fit: contain !important;
+    background-color: #000 !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    object-fit: contain !important;
+}
