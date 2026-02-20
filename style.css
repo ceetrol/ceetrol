@@ -459,7 +459,15 @@ body {
         -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
     }
 
-    .media-stack { grid-template-columns: 1fr; padding: 15px; }
+    .media-stack {
+        /* Turn off the column math for mobile */
+        column-count: auto; 
+        
+        /* Force a simple, unbreakable vertical stack */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     .desc-container { padding: 15px; }
 }
 /* --- REAL MAC OS ALERT STYLE --- */
