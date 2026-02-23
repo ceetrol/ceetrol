@@ -83,7 +83,7 @@ const siteData = [
     
     { 
         id: 'mail', title: 'Mail', icon: 'assets/mail_icon.png', inDock: true, 
-        type: 'link', url: 'mailto:amirali@wavefoundation.co' 
+        type: 'link', url: 'mailto:ceetrol@wavefoundation.co' 
     },
 
     { 
